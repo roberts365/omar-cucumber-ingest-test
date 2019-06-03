@@ -147,7 +147,6 @@ When(~/^the image (.*) avro message is placed on the SQS$/) { String image ->
     DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")
     String formattedDate = now.format(formatter)
 
-
   def json = new JsonSlurper().parseText(text)
   json."${sqsTimestampName}" = formattedDate
   //json."${sqsTimestampName}" = new Date().format("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'", TimeZone.getTimeZone("UTC"))

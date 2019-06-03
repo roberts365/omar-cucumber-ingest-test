@@ -1,6 +1,6 @@
 package omar.cucumber.ingest.test
 
-import omar.cucumber.ingest.test.TomcatStart
+import omar.cucumber.ingest.test.SecurityManagerCheck
 
 class CucumberTest {
     public void startTest() {

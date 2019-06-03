@@ -3,9 +3,16 @@
  */
 package omar.cucumber.ingest.test
 
-class Application {
 
+import omar.cucumber.ingest.test.FeatureFiles
+import omar.cucumber.ingest.test.CucumberTest
+import omar.cucumber.ingest.test.TomcatStart
+
+class Application {
     static void main(String[] args) {
+
+        FeatureFiles featureFiles = new FeatureFiles()
+        featureFiles.create()
 
         if (System.getenv("runEnv") == "local")
         {

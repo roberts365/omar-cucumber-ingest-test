@@ -9,7 +9,6 @@ class CucumberConfig
 
     static def getConfig()
     {
-
         if (!config)
         {
             init()
@@ -24,7 +23,7 @@ class CucumberConfig
 
         if (System.env.CUCUMBER_CONFIG_LOCATION)
         {
-            File testForLocal = new File(System.env.CUCUMBER_CONFIG_LOCATION);
+            File testForLocal = new File(System.env.CUCUMBER_CONFIG_LOCATION)
             if (!testForLocal.exists())
             {
                 resourceFile = new URL(System.env.CUCUMBER_CONFIG_LOCATION)

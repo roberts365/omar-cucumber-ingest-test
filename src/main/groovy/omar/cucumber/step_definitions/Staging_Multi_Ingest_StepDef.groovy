@@ -1,4 +1,4 @@
- package omar.cucumber.step_definitions
+package omar.cucumber.step_definitions
 
 import com.amazonaws.services.sqs.AmazonSQSClient
 import groovy.json.JsonBuilder
